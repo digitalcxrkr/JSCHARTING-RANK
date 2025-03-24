@@ -76,7 +76,7 @@
 
             // Membuat chart
             JSC.Chart('chartDiv', {
-                type: 'vertical',
+                type: 'horizontal',
                 resize_listener: true,
                 title_label: {
                     text: `PERBANDINGAN TARGET vs REALISASI PENJUALAN 2024`,
@@ -161,7 +161,7 @@
                     defaultPoint_marker: {
                         type: 'linear/arrows/minus',
                         size: 20,
-                        rotate: 0
+                        rotate: 90
                     },
                     points: data.map(item => ({
                         x: item.name,
